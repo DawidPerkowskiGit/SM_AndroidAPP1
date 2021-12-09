@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Przypomnij o urodzinach</string>
+    <string name="edit_sendName">Imię</string>
+    <string name="edit_sendSurname">Nazwisko</string>
+    <string name="edit_sendDate">Data urodzin</string>
+    <string name="edit_sendInfo">Dodatkowe informacje</string>
+    <string name="edit_switch">Przypomnienie</string>
+    <string name="button_sendAllData">Zapisz</string>
+    <string name="button_lifeCycles">Cykle</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
