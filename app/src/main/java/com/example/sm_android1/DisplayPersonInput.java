@@ -54,6 +54,31 @@ public class DisplayPersonInput extends AppCompatActivity {
         MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen2.onPause\n");
     }
 
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen2.onStop\n");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen2.onStart\n");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen2.onResume\n");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen2.onDestroy\n");
+    }
+
     public static Date timeNow() {
         return Calendar.getInstance().getTime();
     }

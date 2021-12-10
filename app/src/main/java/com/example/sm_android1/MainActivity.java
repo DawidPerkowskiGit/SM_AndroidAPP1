@@ -27,12 +27,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        setLifeCycleLogs(timeNow().toString()  + " : Screen1.onCreate\n");
-    }
 
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayPersonInput.class);
@@ -56,9 +50,42 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        setLifeCycleLogs(timeNow().toString()  + " : Screen1.onCreate\n");
+    }
+
     @Override
     protected void onPause() {
         super.onPause();
         setLifeCycleLogs(timeNow().toString()  + " : Screen1.onPause\n");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        setLifeCycleLogs(timeNow().toString()  + " : Screen1.onStop\n");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        setLifeCycleLogs(timeNow().toString()  + " : Screen1.onStart\n");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setLifeCycleLogs(timeNow().toString()  + " : Screen1.onResume\n");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        setLifeCycleLogs(timeNow().toString()  + " : Screen1.onDestroy\n");
     }
 }

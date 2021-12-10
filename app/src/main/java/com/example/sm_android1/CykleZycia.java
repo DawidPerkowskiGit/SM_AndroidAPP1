@@ -31,6 +31,30 @@ public class CykleZycia extends AppCompatActivity {
         MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen3.onPause\n");
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen3.onStop\n");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen3.onStart\n");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen3.onResume\n");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        MainActivity.setLifeCycleLogs(timeNow().toString()  + " : Screen3.onDestroy\n");
+    }
+
     public static Date timeNow() {
         return Calendar.getInstance().getTime();
     }
